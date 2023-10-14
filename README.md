@@ -16,10 +16,10 @@ FOR MICROCONTROLLERS (ARDUINO MEGA / ARDUINO NANO):
 | --------- | ---------- |
 | C++      |     HX711.h |
 | C       |    OneWire.h|
-|DallasTemperature.h
-|U8g2lib.h
-|SPI.h
-|Wire.h
+||DallasTemperature.h |
+||U8g2lib.h    |
+||SPI.h    |
+||Wire.h    |
 
 FOR ESP32 WiFi MICROCONTROLLER:
 | LANGUAGES |  LIBRARIES |
