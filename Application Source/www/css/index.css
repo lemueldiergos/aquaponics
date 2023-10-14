@@ -1,0 +1,269 @@
+body {margin: 0;}
+
+* {
+    font-family: monospace;
+}
+
+.container {
+    /*background-color: red;*/
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.general_box {
+    /*letter-spacing: 2px;*/
+    border-radius: 10px;
+    padding: 5% 0;
+    margin: 1%;
+    background-color: rgb(58, 69, 78);
+    width: 20%;
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.general_box > img {
+    width: 25%;
+}
+
+.sample_stream {
+    border-radius: 10px;
+    width: 100%;
+    
+}
+
+.controls_dev {
+    flex-wrap: wrap;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    flex-basis: 10%;
+    align-items: center;
+}
+
+.btn_feed {
+    width: 30em;
+    padding: 5% 5%;
+    letter-spacing: 2px;
+    flex-basis: 40%;
+    margin: 1%;
+    border-radius: 10px;
+    border: 0;
+    background-color: blueviolet;
+}
+
+
+.btn_feed:active {
+    background-color: rgb(192, 43, 226);
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin: 10px;
+    margin-top: 5px;
+    right: 0;
+    border-radius: 30px;
+    z-index: 99999;
+    background-color:crimson;
+    width: 75%;
+    padding: 5%;
+    opacity: 90%;
+    transition: all ease-in-out 0.5s;
+}
+
+.close_img {
+    width: 10%;
+    cursor: pointer;
+}
+
+.alert_green {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+    position: fixed;
+    margin: 0;
+    margin-top: 0; /* -100px */
+    transition: margin-top 0.25s ease-in-out;
+    background-color:rgb(14, 201, 120);
+    width: 90%;
+    padding: 5%;
+    opacity: 90%;
+}
+
+.monitoring_dev {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(58, 69, 78);
+    z-index: 10;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+}
+
+ .navbar > .sandwich_button {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    z-index: 998;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar > .sandwich_button > .sandwich_button_child {
+    background-color: black;
+    padding: 2px;
+    margin: 2px;
+    width: 20px;
+}
+
+.nav_list {
+    position: fixed;
+    background-color: rgb(78, 90, 101);
+    top:0;
+    height: 100%;
+    padding-top: 20%;
+    width: 50%;
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: -300px;
+    transition: margin ease-in-out 0.5s;
+}
+
+.nav_list > li {
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.CONNECTIVITY_SET {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 136, 175);
+    padding: 20% 10%;
+}
+
+#SETTING_TYPE_LAN > input, #SETTING_TYPE_OLN > input {
+    padding: 2%;
+    border: 0;
+    border-radius: 5px;
+    width: 60%;
+}
+
+#SETTING_TYPE_LAN > button, #SETTING_TYPE_OLN > button {
+    padding: 2%;
+    width: 84%;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.CONNECTIVITY_SET > center {
+    background-color: rgba(0, 0, 0, 0.31);
+    width: 80%;
+    border-radius: 20px;
+}
+
+.CONNECTIVITY_SET > center > .CON_TYPE_ {
+    border: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#SET_WEBSOCKET_ADDRESS:active {
+    background-color: rgb(57, 57, 57);
+}
+
+#SETTING_TYPE_LAN {
+    transition: all ease-in-out 0.5s;
+    display: block;
+    position: fixed;
+    width: 95%;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+#SETTING_TYPE_OLN {
+    transition: all ease-in-out 0.5s;
+    display: block;
+    position: fixed;
+    width: 95%;
+    margin-top: 100px;
+    margin-left: 500px;
+    
+}
+
+
+
+.CONNECTIVITY_SET > center > .CON_TYPE_ > .CON_TYPE_CHILD {
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.5s;
+    width: 50%;
+}
+
+.CON_TYPE_LAN {
+    border-radius: 20px 0 0 20px;
+   
+}
+.CON_TYPE_ONL {
+    border-radius: 0 20px 20px 0;
+}
+
+.about {
+    position: fixed;
+    z-index: 9999999;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: 0;
+    font-family: Arial;
+}
+
+#about_close {
+    align-self: end;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.about > h2 {
+    padding: 0 20px;
+    font-size: 200%;
+}
+.about > p {
+    overflow: auto;
+    font-size: 175%;
+    padding: 0 20px;
+}
