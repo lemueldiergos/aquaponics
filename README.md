@@ -13,7 +13,7 @@ FOR DEVELOPING MOBILE APPLICATION:
 
 FOR MICROCONTROLLERS (ARDUINO MEGA / ARDUINO NANO):
 | LANGUAGES |  LIBRARIES |
-| --------- | ---------- | --------- | 
+| --------- | ---------- |
 | C++      |     HX711.h |
 | C       |    OneWire.h|
 |DallasTemperature.h
@@ -23,7 +23,7 @@ FOR MICROCONTROLLERS (ARDUINO MEGA / ARDUINO NANO):
 
 FOR ESP32 WiFi MICROCONTROLLER:
 | LANGUAGES |  LIBRARIES |
-| --------- | ---------- | --------- | 
+| --------- | ---------- | 
 | C++      |     esp_camera.h |
 | C       |    WiFi.h|
 ||WiFiManager.h |
