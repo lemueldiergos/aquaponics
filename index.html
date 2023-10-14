@@ -9,29 +9,44 @@
 <style>
 
     body {
-        background-color: #01321f;
+        background-color: #00170e;
     }
-    
-    .FG1 {color: #01321f};
-    .FG2 {color: #c7ab58};
-    .FG3 {color: #f3f2ee};
 
-    
+    .FG1 {color: #01321f;}
+    .FG2 {color: #c7ab58;}
+    .FG3 {color: #f3f2ee;}
+    .FG4 {color: #b5b5b5;}
+
+    .FB1 {font-weight: bolder;}
+
+    .FS1 {letter-spacing: 2px;}
 
     #logo {
         border-radius: 100%;
     }
 
-    
+    .nav_me {
+        display: flex;
+        align-items: center;
+    }    
+
 </style>
 <body>
  <div class="conmtainer-fluid">
    <div class="nav p-3">
-        <div>
-            <img id="logo" width="90" src="https://marketplace.canva.com/EAFEcdxWgeo/1/0/1600w/canva-elegant-circle-signature-photography-logo--kbTNqEWceg.jpg">
-            <h2 class="FG2">Aquaponics</h2>
+        <div class="row nav_me">
+            <img class="col-2" id="logo" src="https://marketplace.canva.com/EAFEcdxWgeo/1/0/1600w/canva-elegant-circle-signature-photography-logo--kbTNqEWceg.jpg">
+            <h4 class="col-3 FG2 FB1">Aquaponics</h4>
         </div>
    </div>
+   <br>
+   <div class="text-center px-4">
+        <img class="col-6 col-lg-2" src="assets/phone.png" width="200"/>
+        <h2 class="FG2 FS1">Aquaponics</h2>
+        <h2 class="FG3">automates water quality management</h2>
+        <p class="FG4">Aquaponics system automates and manages environmental factors for optimal water quality, reducing human intervention.</p>
+        <button class="btn btn-warning">Donwload</button>
+    </div>
  </div>
 
     
